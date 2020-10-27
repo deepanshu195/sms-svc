@@ -1,0 +1,8 @@
+module.exports = {
+    include: ['src/**/*.ts'],
+    extension: ['.ts'],
+    require: ['ts-node/register'],
+    reporter: ['text-summary', 'html'],
+    sourceMap: true,
+    instrument: true,
+};

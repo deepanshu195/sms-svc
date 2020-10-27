@@ -1,0 +1,22 @@
+name: Send SMS
+on:
+    push:
+        branches:
+            - master
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: 'registry setup'
+              uses: actions/setup-node@v1
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: install
+              run: npm ci
+            - name: build
+              run: npm run build
+            - name: semantic-release
+              run: npx semantic-release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
