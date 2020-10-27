@@ -18,5 +18,7 @@ jobs:
               run: npm run build
             - name: semantic-release
               run: npx semantic-release
+              with:
+                  registry-url: 'https://npm.pkg.github.com'
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
