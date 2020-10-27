@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/deepanshu195/sms-svc/compare/v1.0.1...v1.0.2) (2020-10-27)
+
+
+### Bug Fixes
+
+* **assests:** added ([67d8a00](https://github.com/deepanshu195/sms-svc/commit/67d8a006374f169a00bd58e4dd22af7e023a8801))
+
 ## [1.0.1](https://github.com/deepanshu195/sms-svc/compare/v1.0.0...v1.0.1) (2020-10-27)
 
 
