@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/deepanshu195/sms-svc/compare/v1.0.7...v1.0.8) (2020-10-27)
+
+
+### Bug Fixes
+
+* **registryurl:** added ([d3d04f9](https://github.com/deepanshu195/sms-svc/commit/d3d04f939ee031f3f001c57e96e4f14b7675f995))
+
 ## [1.0.7](https://github.com/deepanshu195/sms-svc/compare/v1.0.6...v1.0.7) (2020-10-27)
 
 
