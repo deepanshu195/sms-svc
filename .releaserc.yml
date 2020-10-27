@@ -6,6 +6,6 @@
             '@semantic-release/release-notes-generator',
             ['@semantic-release/changelog', { 'changelogFile': 'docs/CHANGELOG.md' }],
             ['@semantic-release/git', { 'assets': ['docs/CHANGELOG.md'] }],
-            ['@semantic-release/github', 'assets': [{ 'path': 'dist/*', 'label': 'src directory' }]],
+            ['@semantic-release/github', 'assets': [{ 'path': 'dist/**', 'label': 'src directory' }]],
         ],
 }
