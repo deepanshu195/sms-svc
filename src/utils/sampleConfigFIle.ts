@@ -1,4 +1,4 @@
-const a = {
+export const creds = {
     vendorConfigList: [
         {
             type: 'xxxxx',
@@ -12,4 +12,4 @@ const a = {
             },
         },
     ],
-}
+};

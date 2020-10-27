@@ -1,12 +1,9 @@
-import axios from "axios";
-import responseMessage from "../utils/responseMessage";
-async function apiCallExecutor(requestedObject: Object): Promise<any> {
-  // try {
-    let response = await axios(requestedObject);
-    // @ts-ignore
-     return  response;
- }
+import axios from 'axios';
+async function apiCallExecutor(requestedObject: any): Promise<any> {
+    const response = await axios(requestedObject);
+    return response;
+}
 const api = {
-  apiCallExecutor,
+    apiCallExecutor,
 };
 export default api;
