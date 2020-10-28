@@ -24,6 +24,8 @@ jobs:
               run: cat  /home/runner/work/_temp/.npmrc
             - name: echo
               run: echo ${{ secrets.GITHUB_TOKEN }}
+            - name: build
+              run: npm run build
             - name: publish
               run: npx semantic-release
               env:
