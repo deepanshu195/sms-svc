@@ -1,5 +1,5 @@
 {
-  "name": "sms-lib-testing-for-semantic-release",
+  "name": "testing-sms-svc",
   "version": "1.0.1",
   "description": "Send the sms via this package. Written in TS, it allows you to integrate with other sms service providers easily.",
   "main": "dist/index.js",
