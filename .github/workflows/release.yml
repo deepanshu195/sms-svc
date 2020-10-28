@@ -3,9 +3,6 @@ on:
     push:
         branches:
             - master
-# env:
-#     NPM_TOKEN: 84457a8f68ab18d8f4e63a6a5d5e8f62fcf64d31
-
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -21,8 +18,8 @@ jobs:
               shell: bash
               run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
               id: extract_branch
-            - name: Set npm registry
-              run: npm config set @deepanshu195:registry https://npm.pkg.github.com
+            # - name: Set npm registry
+            #   run: npm config set @deepanshu195:registry https://npm.pkg.github.com
             - name: install
               run: npm ci
             - name: build
