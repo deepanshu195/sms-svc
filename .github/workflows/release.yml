@@ -4,7 +4,7 @@ on:
         branches:
             - master
 env:
-    NPM_TOKEN: ce46fc67d3db91a4585c3f17be48298d377c1290
+    NPM_TOKEN: 740be4614f948910beafedd1a1b2e3945d4f74f6
 
 jobs:
     build:
