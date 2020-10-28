@@ -21,10 +21,8 @@ jobs:
               run: npm ci
             - name: build
               run: npm run build
-            # - name: semantic-release
-            #   run: npx semantic-release --debug
-            - name: publish
-              run: npm  publish
+            - name: semantic-release
+              run: npx semantic-release --debug
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
