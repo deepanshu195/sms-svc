@@ -1,5 +1,5 @@
 {
-  "name": "@deepanshu195/testing-sms-svc",
+  "name": "@deepanshu195/testing-sms-svc-two",
   "version": "1.0.7",
   "description": "Send the sms va this package. Written in TS, it allows you to integrate with other sms service providers easily.",
   "main": "dist/index.js",
