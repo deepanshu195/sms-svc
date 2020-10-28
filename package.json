@@ -1,6 +1,6 @@
 {
   "name": "@deepanshu195/testing-sms-svc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Send the sms via this package. Written in TS, it allows you to integrate with other sms service providers easily.",
   "main": "dist/index.js",
   "scripts": {
@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:deepanshu195/sms-svc.git"
+    "url": "git://github.com/deepanshu195/sms-svc.git"
   },
-    "publishConfig": {
+  "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "author": "Deepanshu",
