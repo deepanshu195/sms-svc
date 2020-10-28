@@ -21,7 +21,15 @@ jobs:
               run: npm ci
             - name: build
               run: npm run build
-            # - name: semantic-release
+            - name: Extract branch name
+              shell: bash
+              run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+              id: extract_branch
+            - name: Set npm registry
+              run: npm config set @deepanshu195:registry https://npm.pkg.github.com
+            - name: Build
+              run: npm publish
+              # - name: semantic-release
             # run: npx semantic-release --debug
             # - name: Set npm registry
             #   run: npm config set @deepanshu195:registry https://npm.pkg.github.com
@@ -29,12 +37,4 @@ jobs:
             #   run: npm publish
             #   env:
             #       NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-           # NPM_TOKEN: 1b23278c0101138c490ccd74c24fc9155e40045f
-             - name: Extract branch name
-               shell: bash
-               run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-               id: extract_branch
-             - name: Set npm registry
-               run: npm config set @deepanshu195:registry https://npm.pkg.github.com
-             - name: Build
-               run: npm publish
+            # NPM_TOKEN: 1b23278c0101138c490ccd74c24fc9155e40045f
