@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/deepanshu195/sms-svc/compare/v1.1.0...v1.2.0) (2020-10-28)
+
+
+### Features
+
+* **a22:** done slash npm ([e6e929c](https://github.com/deepanshu195/sms-svc/commit/e6e929c63ef6616c9f1fa5287824c9f69e0dfd86))
+
 # [1.1.0](https://github.com/deepanshu195/sms-svc/compare/v1.0.0...v1.1.0) (2020-10-28)
 
 
