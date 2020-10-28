@@ -1,3 +1,29 @@
+# 1.0.0 (2020-10-28)
+
+
+### Bug Fixes
+
+* **assests:** added ([67d8a00](https://github.com/deepanshu195/sms-svc/commit/67d8a006374f169a00bd58e4dd22af7e023a8801))
+* **github:** added ([ee34340](https://github.com/deepanshu195/sms-svc/commit/ee34340f23d77ffd0f33fe87e997311810d83172))
+* **npmrc:** added ([8eb080f](https://github.com/deepanshu195/sms-svc/commit/8eb080f760ff5afce19be77e2db5305102fab878))
+* **registryurl:** added ([5cef12d](https://github.com/deepanshu195/sms-svc/commit/5cef12d8ad4918d92231538df2797adc72b60cfd))
+* **registryurl:** added ([a6e0622](https://github.com/deepanshu195/sms-svc/commit/a6e0622b0101f4161d63c44d63782252febb8750))
+* **registryurl:** added ([2a66515](https://github.com/deepanshu195/sms-svc/commit/2a665152acf1a4a2d1afec78ca34eb45eccb78bd))
+* **registryurl:** added ([d3d04f9](https://github.com/deepanshu195/sms-svc/commit/d3d04f939ee031f3f001c57e96e4f14b7675f995))
+* **registryurl:** added ([46db641](https://github.com/deepanshu195/sms-svc/commit/46db641d441233b067574a40c6fc315745ec4ebf))
+* **releaseyml:** done changes ([88811b3](https://github.com/deepanshu195/sms-svc/commit/88811b30ee473bcd4fd79a6067745e5ec4cfaecb))
+* **star:** added ([4c4a81e](https://github.com/deepanshu195/sms-svc/commit/4c4a81e7da63aa8e0555a8499daf5ebad7d5c432))
+* **test:** added ([bdfe8bb](https://github.com/deepanshu195/sms-svc/commit/bdfe8bb5fefac977373c31a46f345698211b9397))
+* **tsconfig:** added ([c15f38e](https://github.com/deepanshu195/sms-svc/commit/c15f38ef99a7be4ab605caf1dc5390522d49828f))
+* **tsconfig:** added ([d31be01](https://github.com/deepanshu195/sms-svc/commit/d31be018480b2a235bdf4dd4ccc43a6bd5ab2023))
+* **tsconfig:** added ([d838892](https://github.com/deepanshu195/sms-svc/commit/d8388921f5c8a44ae9f55ffc3df6df1b229c01d6))
+
+
+### Features
+
+* **a:** done ([4dbaab7](https://github.com/deepanshu195/sms-svc/commit/4dbaab749332ace3c2e3e82df49fbcf07cc2f646))
+* **a:** done ([541bcbc](https://github.com/deepanshu195/sms-svc/commit/541bcbcb48eefd7614d8c283e0fe7ffeadc3dabb))
+
 ## [1.0.9](https://github.com/deepanshu195/sms-svc/compare/v1.0.8...v1.0.9) (2020-10-27)
 
 
