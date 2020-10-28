@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/deepanshu195/sms-svc/compare/v1.2.1...v1.3.0) (2020-10-28)
+
+
+### Features
+
+* **secret:** added token ([60ef78c](https://github.com/deepanshu195/sms-svc/commit/60ef78cc4c629d85d6833e7ef28cc036dd02e4b1))
+* **secret:** added token ([582b8a8](https://github.com/deepanshu195/sms-svc/commit/582b8a8b9dbf1f438ab5408073a60f7cc50ef915))
+
 ## [1.2.1](https://github.com/deepanshu195/sms-svc/compare/v1.2.0...v1.2.1) (2020-10-28)
 
 
