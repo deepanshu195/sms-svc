@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/deepanshu195/sms-svc/compare/v1.3.0...v1.4.0) (2020-10-28)
+
+
+### Features
+
+* **secret:** added files ([59c7195](https://github.com/deepanshu195/sms-svc/commit/59c7195299f0a0a633314736628aafc26b5c4091))
+* **secret:** added files ([e7ef341](https://github.com/deepanshu195/sms-svc/commit/e7ef34189d808826470440609bcbb02597a4750c))
+
 # [1.3.0](https://github.com/deepanshu195/sms-svc/compare/v1.2.1...v1.3.0) (2020-10-28)
 
 
