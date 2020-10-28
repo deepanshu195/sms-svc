@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/deepanshu195/sms-svc/compare/v1.2.0...v1.2.1) (2020-10-28)
+
+
+### Bug Fixes
+
+* **name:** changed the name ([e86fd02](https://github.com/deepanshu195/sms-svc/commit/e86fd02f07b4f30d113d1c8d9090c19eaffc3b8f))
+
 # [1.2.0](https://github.com/deepanshu195/sms-svc/compare/v1.1.0...v1.2.0) (2020-10-28)
 
 
