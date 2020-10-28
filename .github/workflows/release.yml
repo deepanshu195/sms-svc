@@ -1,4 +1,4 @@
-name: Send SMS
+name: SendingSMS
 on:
     push:
         branches:
