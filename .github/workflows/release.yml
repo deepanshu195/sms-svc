@@ -17,8 +17,8 @@ jobs:
                   node-version: 12
                   registry-url: https://npm.pkg.github.com/
                   scope: '@deepanshu195'
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              # env:
+              # NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: install
               run: npm ci
             - name: build
