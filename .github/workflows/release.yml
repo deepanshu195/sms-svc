@@ -1,10 +1,8 @@
-name: SendingSMS
+name: Send SMS
 on:
     push:
         branches:
             - master
-# env:
-#     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -13,48 +11,78 @@ jobs:
             - name: 'registry setup'
               uses: actions/setup-node@v1
               with:
-                  node-version: '12.x'
-                  registry-url: 'https://npm.pkg.github.com'
+                  node-version: 12
+                  registry-url: https://npm.pkg.github.com
                   scope: '@deepanshu195'
-              # env:
-              #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: install
-              run: npm install
-            - name: cat
-              run: cat  /home/runner/work/_temp/.npmrc
-            - name: echo
-              run: echo ${{ secrets.GITHUB_TOKEN }}
+              run: npm ci
             - name: build
+              if: success()
               run: npm run build
-            - name: publish
-              run: npx semantic-release --debug
+            - name: semantic-release
+              if: success()
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    # build:
-    #     runs-on: ubuntu-latest
-    #     steps:
-    #         - uses: actions/checkout@v2
-    #         - name: 'registry setup'
-    #           uses: actions/setup-node@v1
-    #           with:
-    #               node-version: '12.x'
-    #               registry-url: https://npm.pkg.github.com/
-    #               scope: '@deepanshu195'
-    #         - name: Set npm registry
-    #           run: npm config set @deepanshu195:registry https://npm.pkg.github.com
-    #         - name: install
-    #           run: npm ci
-    #         - name: build
-    #           run: npm run build
-    #         - name: publish
-    #           run: npm publish
-    # - name: semantic-release
-    # run: npx semantic-release --debug
-    # - name: Set npm registry
-    #   run: npm config set @deepanshu195:registry https://npm.pkg.github.com
-    # - name: publish
-    #   run: npm publish
-    #   env:
-    #       NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
-    # NPM_TOKEN: 1b23278c0101138c490ccd74c24fc9155e40045f
+              run: npx semantic-release --debug
+# name: SendingSMS
+# on:
+#     push:
+#         branches:
+#             - master
+# # env:
+# #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+# jobs:
+#     build:
+#         runs-on: ubuntu-latest
+#         steps:
+#             - uses: actions/checkout@v2
+#             - name: 'registry setup'
+#               uses: actions/setup-node@v1
+#               with:
+#                   node-version: '12.x'
+#                   registry-url: 'https://npm.pkg.github.com'
+#                   scope: '@deepanshu195'
+#               # env:
+#               #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#             - name: install
+#               run: npm install
+#             - name: cat
+#               run: cat  /home/runner/work/_temp/.npmrc
+#             - name: echo
+#               run: echo ${{ secrets.GITHUB_TOKEN }}
+#             - name: build
+#               run: npm run build
+#             - name: publish
+#               run: npx semantic-release --debug
+#               env:
+#                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#                   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#     # build:
+#     #     runs-on: ubuntu-latest
+#     #     steps:
+#     #         - uses: actions/checkout@v2
+#     #         - name: 'registry setup'
+#     #           uses: actions/setup-node@v1
+#     #           with:
+#     #               node-version: '12.x'
+#     #               registry-url: https://npm.pkg.github.com/
+#     #               scope: '@deepanshu195'
+#     #         - name: Set npm registry
+#     #           run: npm config set @deepanshu195:registry https://npm.pkg.github.com
+#     #         - name: install
+#     #           run: npm ci
+#     #         - name: build
+#     #           run: npm run build
+#     #         - name: publish
+#     #           run: npm publish
+#     # - name: semantic-release
+#     # run: npx semantic-release --debug
+#     # - name: Set npm registry
+#     #   run: npm config set @deepanshu195:registry https://npm.pkg.github.com
+#     # - name: publish
+#     #   run: npm publish
+#     #   env:
+#     #       NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+#     # NPM_TOKEN: 1b23278c0101138c490ccd74c24fc9155e40045f
