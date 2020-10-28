@@ -24,7 +24,7 @@ jobs:
               run: npm ci
             - name: build
               run: npm run build
-            - name: Build
+            - name: publish
               run: npm publish
               # - name: semantic-release
             # run: npx semantic-release --debug
