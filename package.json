@@ -1,6 +1,6 @@
 {
-  "name": "testing-sms-svc",
-  "version": "1.0.4",
+  "name": "@deepanshu195/testing-sms-svc",
+  "version": "1.0.5",
   "description": "Send the sms via this package. Written in TS, it allows you to integrate with other sms service providers easily.",
   "main": "dist/index.js",
   "scripts": {

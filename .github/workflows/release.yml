@@ -7,33 +7,47 @@ env:
     repo-token: ${{ secrets.GITHUB_TOKEN }}
 jobs:
     build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: 'registry setup'
-              uses: actions/setup-node@v1
-              with:
-                  node-version: '12.0.0'
-                  registry-url: https://npm.pkg.github.com/
-                  scope: '@deepanshu195'
-            - name: Extract branch name
-              shell: bash
-              run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-              id: extract_branch
-            # - name: Set npm registry
-            #   run: npm config set @deepanshu195:registry https://npm.pkg.github.com
-            - name: install
-              run: npm ci
-            - name: build
-              run: npm run build
-            - name: publish
-              run: npm publish
-              # - name: semantic-release
-            # run: npx semantic-release --debug
-            # - name: Set npm registry
-            #   run: npm config set @deepanshu195:registry https://npm.pkg.github.com
-            # - name: publish
-            #   run: npm publish
-            #   env:
-            #       NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            # NPM_TOKEN: 1b23278c0101138c490ccd74c24fc9155e40045f
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v2
+        - name: 'registry setup'
+          uses: actions/setup-node@v1
+          with:
+              node-version: '12.x'
+              registry-url: 'https://npm.pkg.github.com'
+              scope: '@deepanshu195'
+          env:
+              NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        - name: install
+          run: npm install
+        - name: publish
+          run: npm publish
+          env:
+              NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # build:
+    #     runs-on: ubuntu-latest
+    #     steps:
+    #         - uses: actions/checkout@v2
+    #         - name: 'registry setup'
+    #           uses: actions/setup-node@v1
+    #           with:
+    #               node-version: '12.x'
+    #               registry-url: https://npm.pkg.github.com/
+    #               scope: '@deepanshu195'
+    #         - name: Set npm registry
+    #           run: npm config set @deepanshu195:registry https://npm.pkg.github.com
+    #         - name: install
+    #           run: npm ci
+    #         - name: build
+    #           run: npm run build
+    #         - name: publish
+    #           run: npm publish
+    # - name: semantic-release
+    # run: npx semantic-release --debug
+    # - name: Set npm registry
+    #   run: npm config set @deepanshu195:registry https://npm.pkg.github.com
+    # - name: publish
+    #   run: npm publish
+    #   env:
+    #       NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # NPM_TOKEN: 1b23278c0101138c490ccd74c24fc9155e40045f
