@@ -3,8 +3,8 @@ on:
     push:
         branches:
             - master
-env:
-    NPM_TOKEN: 29ed7d5ec709fda00ff30f0090a153e6bc3387fe
+# env:
+#     NPM_TOKEN: 77018bd12a8e50a7eaac881ce87e82f63636a5be
 
 jobs:
     build:
@@ -14,7 +14,7 @@ jobs:
             - name: 'registry setup'
               uses: actions/setup-node@v1
               with:
-                  node-version: 12
+                  node-version: '12.0.0'
                   registry-url: https://npm.pkg.github.com/
                   scope: '@deepanshu195'
             - name: install
