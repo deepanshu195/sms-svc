@@ -5,8 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha",
-    "build": "tsc -p .",
-    "lint": "./node_modules/.bin/eslint . --ignore-path .gitignore --ext .js,.ts",
+     "prebuild": "rm -rf dist",
+    "build": "./node_modules/.bin/tsc -p .",
+    "postbuild": "cp package*json dist/.",
+   "lint": "./node_modules/.bin/eslint . --ignore-path .gitignore --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
     "update": "./update.sh"
   },
