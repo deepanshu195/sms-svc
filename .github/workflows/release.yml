@@ -28,5 +28,5 @@ jobs:
             - name: publish
               run: npm publish
               env:
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              NPM_TOKEN: ce46fc67d3db91a4585c3f17be48298d377c1290
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ce46fc67d3db91a4585c3f17be48298d377c1290
