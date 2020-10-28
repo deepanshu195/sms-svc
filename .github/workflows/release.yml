@@ -3,8 +3,8 @@ on:
     push:
         branches:
             - master
-# env:
-#     NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
+env:
+    NPM_TOKEN: ce46fc67d3db91a4585c3f17be48298d377c1290
 
 jobs:
     build:
@@ -25,4 +25,4 @@ jobs:
               run: npx semantic-release --debug
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  # NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
+                  NPM_TOKEN: ce46fc67d3db91a4585c3f17be48298d377c1290
